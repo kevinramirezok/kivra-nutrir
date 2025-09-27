@@ -173,15 +173,20 @@ header .header-right {
 /* Estilos específicos para el carrito en el header */
 .header-cart {
   margin-right: 20px;
+  position: relative;   
 }
 
 .header-cart .toggle-carrito {
   background: var(--crema);
   color: var(--marron);
-  padding: 8px 16px;
+  padding: 8px 8px;
+  width: 40px;
   border-radius: var(--radius-md);
   border: 2px solid var(--marron-claro);
   font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-cart .mini-carrito-contenido {
@@ -722,14 +727,19 @@ h2 {
 
 .carrito-badge {
   position: absolute;
-  top: -8px;
-  right: -8px;
+  top: -5px;
+  right: -5px;
   background: var(--naranja);
   color: var(--blanco);
   border-radius: 50%;
-  padding: 2px 8px;
-  font-size: 1.2rem;
+  padding: 2px 5px;
+  font-size: 1rem;
   font-weight: bold;
+  min-width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 2px 8px rgba(247, 178, 103, 0.25);
   pointer-events: none;
 }
@@ -825,17 +835,12 @@ footer {
 }
 
 .mini-carrito {
-  position: fixed;
-  top: 80px;
-  right: 20px;
-  background: var(--crema-claro);
-  border: 2px solid var(--marron-claro);
-  border-radius: 12px;
+  position: relative;
+  background: transparent;
+  border: none;
   padding: 0;
-  max-width: 300px;
-  min-width: 250px;
+  width: 50px;
   z-index: 2500;
-  box-shadow: 0 4px 16px rgba(75, 44, 22, 0.25);
 }
 
 .toggle-carrito {
