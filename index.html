@@ -63,6 +63,33 @@
     <input type="text" id="buscador" placeholder="Buscar producto..." aria-label="Buscar productos" role="searchbox">
   </div>
 
+  <!-- MODAL SELECCIÓN DE PRODUCTOS -->
+  <div id="modal-seleccion" class="modal">
+    <div class="modal-content seleccion-content">
+      <span class="cerrar-modal" id="cerrar-modal-seleccion">&times;</span>
+      <h3 id="modal-seleccion-titulo"></h3>
+      <p id="modal-seleccion-descripcion" class="seleccion-descripcion"></p>
+      
+      <div class="seleccion-instrucciones">
+        <p>Selecciona los productos que deseas incluir en tu promoción:</p>
+        <p class="seleccion-contador">
+          Productos seleccionados: <span id="contador-seleccion">0</span>/<span id="total-requerido"></span>
+        </p>
+      </div>
+
+      <div id="productos-seleccion" class="productos-seleccion"></div>
+      
+      <div class="seleccion-footer">
+        <button id="confirmar-seleccion" class="btn-confirmar" disabled>
+          Confirmar Selección
+        </button>
+        <button id="cancelar-seleccion" class="btn-cancelar">
+          Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- MODAL PRODUCTOS -->
   <div id="modal-productos" class="modal">
     <!-- CARRITO EN MODAL -->
@@ -115,23 +142,32 @@
       <h2 class="productos-titulo">Nuestros Productos</h2>
     </div>
 
+    <!-- PROMOS -->
+    <div class="productos-seccion">
+      <h3 class="productos-subtitulo">Promociones</h3>
+    </div>
+    <div class="grid" id="promosContainer"></div>
+
+    <button id="verMasPromos" aria-label="Ver más promociones"><i class="bi bi-plus-circle"
+        aria-hidden="true"></i> Ver más promociones</button>
+
     <!-- GRANOLAS SALUDABLES -->
     <div class="productos-seccion">
-      <h3 class="productos-subtitulo">Granolas Saludables</h3>
+      <h3 class="productos-subtitulo">Granolas y Otros</h3>
     </div>
     <div class="grid" id="granolaContainer"></div>
 
     <button id="verMasGranola" aria-label="Ver más productos de granola"><i class="bi bi-plus-circle"
-        aria-hidden="true"></i> Ver más granolas</button>
+        aria-hidden="true"></i> Ver más productos</button>
 
 
     <!-- BARRITAS -->
     <div class="productos-seccion">
-      <h3 class="productos-subtitulo">Barritas Saludables</h3>
+      <h3 class="productos-subtitulo">Barritas y Turrones</h3>
     </div>
     <div class="grid" id="barritasContainer"></div>
 
-    <button id="verMasBarritas"><i class="bi bi-plus-circle"></i> Ver más barritas</button>
+    <button id="verMasBarritas"><i class="bi bi-plus-circle"></i> Ver más productos</button>
 
   </section>
 

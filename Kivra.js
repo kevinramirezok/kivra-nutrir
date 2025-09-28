@@ -3,30 +3,101 @@
 ==================================*/
 const productos = {
     barritas: [
-        { nombre: "Barrita de Avena", precio: 450, descripcion: "Avena, miel y frutos secos", imagen: "barrita (1).jpg" },
-        { nombre: "Barrita de Chocolate", precio: 450, descripcion: "Chocolate negro 70% cacao", imagen: "barrita (2).jpg" },
-        { nombre: "Barrita de Almendras", precio: 500, descripcion: "Almendras tostadas y miel", imagen: "barrita (3).jpg" },
-        { nombre: "Barrita de Maní", precio: 400, descripcion: "Maní tostado y miel", imagen: "barrita (4).jpg" },
-        { nombre: "Barrita Mix", precio: 500, descripcion: "Mix de frutos secos", imagen: "barrita (5).jpg" },
-        { nombre: "Barrita Energética", precio: 550, descripcion: "Con semillas y miel", imagen: "barrita (6).jpg" },
-        { nombre: "Barrita Proteica", precio: 600, descripcion: "Alta en proteínas", imagen: "barrita (7).jpg" },
-        { nombre: "Barrita Sin TACC", precio: 550, descripcion: "Apta celíacos", imagen: "barrita (8).jpg" }
+        { nombre: "Barrita Proteica", precio: 1150, descripcion: "Barra de cereal, trigo, girasol, chía, chocolate y aceite de maní", imagen: "barrita (1).jpg" },
+        { nombre: "Barrita Dulce de Leche", precio: 1150, descripcion: "Barra de cereal, dulce de leche, maní, nueces", imagen: "barrita (2).jpg" },
+        { nombre: "Barrita Trigo Sarraceno", precio: 1150, descripcion: "Barra de cereal, trigo sarraceno, algarroba, arándanos, quinoa y chía", imagen: "barrita (3).jpg" },
+        { nombre: "Barrita Energética", precio: 1150, descripcion: "Barra de cereal, miel, quinoa, almendras y miel", imagen: "barrita (4).jpg" },
+        { nombre: "Barrita Natural", precio: 1000, descripcion: "Granola, pasta de maíz, maní, pasas de uva y sésamo integral", imagen: "barrita (5).jpg" },
+        { nombre: "Barrita Granola", precio: 1000, descripcion: "Cereal, girasol, pasas de uva y miel", imagen: "barrita (6).jpg" },
+        { nombre: "Barrita de Sésamo", precio: 1000, descripcion: "Sésamo, coco y miel", imagen: "barrita (7).jpg" },
+        { nombre: "Barrita Keto", precio: 1500, descripcion: "Barra de cereal, nueces, maní, pasta de maní, almendras, girasol, chocolate 80%, girasol, chía, sésamo", imagen: "granola (11).jpg" },
+        { nombre: "Barrita de Maní", precio: 1000, descripcion: "Maní, pasas de uva y miel", imagen: "barrita (8).jpg" },
+        { nombre: "Turrón Energético de Chía", precio: 1600, descripcion: "Sésamo, almendras tostadas, girasol, chía y miel", imagen: "turron (1).jpg" },
+        { nombre: "Turrón Energético", precio: 1600, descripcion: "Girasol tostada, semillas de lino, quinoa y fructosa", imagen: "turron (2).jpg" },
+        { nombre: "Turrón Puro Calcio", precio: 1600, descripcion: "Sésamo blanco, sésamo negro, nueces y miel", imagen: "turron (3).jpg" },
+        { nombre: "Turrón Pura Fibra", precio: 1600, descripcion: "Avena, maní tostado, semillas de maíz sin azúcar, chía y fructosa", imagen: "turron (4).jpg" },
+        { nombre: "Turrón Crocante de Maní", precio: 1600, descripcion: "Maní seleccionado y fructosa", imagen: "turron (5).jpg" }
     ],
     granolas: [
-        { nombre: "Granola Clásica", precio: 1200, descripcion: "Mix tradicional", imagen: "granola (1).jpg" },
-        { nombre: "Granola Frutal", precio: 1300, descripcion: "Con frutas deshidratadas", imagen: "granola (2).jpg" },
-        { nombre: "Granola Chocolate", precio: 1400, descripcion: "Con chips de chocolate", imagen: "granola (3).jpg" },
-        { nombre: "Granola Sin TACC", precio: 1500, descripcion: "Apta celíacos", imagen: "granola (4).jpg" },
-        { nombre: "Granola Proteica", precio: 1600, descripcion: "Alta en proteínas", imagen: "granola (5).jpg" },
-        { nombre: "Granola Light", precio: 1300, descripcion: "Baja en calorías", imagen: "granola (6).jpg" },
-        { nombre: "Granola Premium", precio: 1800, descripcion: "Ingredientes premium", imagen: "granola (7).jpg" },
-        { nombre: "Granola Energética", precio: 1400, descripcion: "Con super alimentos", imagen: "granola (8).jpg" }
+        { nombre: "Granola Premium", precio: 5800, descripcion: "Avena tostada, semillas de chía, almendras, castañas caju, duraznos, peras, pasas de uva y miel de abejas", imagen: "granola (1).jpg" },
+        { nombre: "Granola Madre Tierra", precio: 5900, descripcion: "Avena, harina de algarroba, arándanos pasa, quinoa pop, sal, aceite de girasol, trigo Sarraceno, coco en escamas, saborizante de vainilla, fructosa", imagen: "granola (2).jpg" },
+        { nombre: "Granola Fuerza Natural", precio: 5900, descripcion: "Avena, maní, maní triturado, quinoa pop, copos maíz sin azúcar, almendras, aceite de girasol, sal, saborizante (vainilla), fructosa", imagen: "granola (3).jpg" },
+        { nombre: "Granola Crocante", precio: 5900, descripcion: "Avena tostada, copos de maíz sin azúcar, semillas de lino, semillas de girasol pelado, semillas de chía, sésamo integral y fructosa", imagen: "granola (4).jpg" },
+        { nombre: "Granola Especial con Frutas", precio: 5600, descripcion: "Avena tostada, duraznos, peras, almendras, pasas de uva y miel de abejas", imagen: "granola (5).jpg" },
+        { nombre: "Granola Natural", precio: 5900, descripcion: "Avena tostada, copos de maíz sin azúcar, almendras, sésamo integral, pasas de uva y fructosa", imagen: "granola (6).jpg" },
+        { nombre: "Granola Energética", precio: 5900, descripcion: "Avena tostada, copos de maíz sin azúcar, almendras, maní pelado, girasol pelado y fructosa", imagen: "granola (7).jpg" },
+        { nombre: "Granola Crocante con Manzanas", precio: 5900, descripcion: "Avena tostada, copos de maíz sin azúcar, nueces, pasas de uva, manzana y fructosa", imagen: "granola (8).jpg" },
+        { nombre: "Granola Tropical", precio: 5900, descripcion: "Avena tostada, pasas de uva, copos de maíz sin azúcar, banana, almendras y fructosa", imagen: "granola (9).jpg" },
+        { nombre: "Granola Keto", precio: 14800, descripcion: "Granola especial, maní, pasta de maní, almendras, girasol, chocolate 80%, girasol, chía, sésamo", imagen: "granola (10).jpg" },
+        /*{ nombre: "Aceite de Coco 150ml", precio: 3500, descripcion: "Aceite de coco prensado en frío, 100% natural, libre de gluten", imagen: "aceite (1).jpg" },
+        { nombre: "Aceite de Coco 250ml", precio: 5500, descripcion: "Aceite de coco prensado en frío, 100% natural, libre de gluten", imagen: "aceite (2).jpg" },
+        { nombre: "Aceite de Coco 500ml", precio: 9500, descripcion: "Aceite de coco prensado en frío, 100% natural, libre de gluten", imagen: "aceite (3).jpg" },
+        { nombre: "Aceite de Coco 360ml", precio: 6500, descripcion: "Aceite de coco prensado en frío, presentación en vidrio, libre de gluten", imagen: "aceite (4).jpg" },
+        { nombre: "Aceite de Coco 650ml", precio: 11500, descripcion: "Aceite de coco prensado en frío, presentación en vidrio, libre de gluten", imagen: "aceite (5).jpg" }*/
+    ],
+    promos: [
+        {
+            titulo: "Promo Granolas Premium",
+            descripcion: "Llevando 3 unidades surtidas",
+            cantidadRequerida: 3,
+            categoria: "granolas",
+            productos: ["Granola Premium", "Granola Madre Tierra", "Granola Fuerza Natural"],
+            precioPromo: 27000,
+            precioOriginal: 5800
+        },
+        {
+            titulo: "Promo Granolas Especiales",
+            descripcion: "Llevando 3 unidades surtidas",
+            cantidadRequerida: 3,
+            categoria: "granolas",
+            productos: ["Granola Crocante", "Granola Especial con Frutas", "Granola Natural", "Granola Energética", "Granola Crocante con Manzanas", "Granola Tropical"],
+            precioPromo: 25000,
+            precioOriginal: 5900
+        },
+        {
+            titulo: "Promo Barritas Premium",
+            descripcion: "Llevando 4 unidades surtidas",
+            cantidadRequerida: 4,
+            categoria: "barritas",
+            productos: ["Barrita Proteica", "Barrita Dulce de Leche", "Barrita Trigo Sarraceno", "Barrita Energética"],
+            precioPromo: 4000,
+            precioOriginal: 1150
+        },
+        {
+            titulo: "Promo Barritas Naturales",
+            descripcion: "Llevando 4 unidades surtidas",
+            cantidadRequerida: 4,
+            categoria: "barritas",
+            productos: ["Barrita Natural", "Barrita Granola", "Barrita de Sésamo", "Barrita de Maní"],
+            precioPromo: 3600,
+            precioOriginal: 1000
+        },
+        {
+            titulo: "Promo Turrones",
+            descripcion: "Llevando 4 unidades surtidas",
+            cantidadRequerida: 4,
+            categoria: "barritas",
+            productos: ["Turrón Energético de Chía", "Turrón Energético", "Turrón Puro Calcio", "Turrón Pura Fibra", "Turrón Crocante de Maní"],
+            precioPromo: 7000,
+            precioOriginal: 1600
+        },
+        {
+            titulo: "Promo Keto",
+            descripcion: "Llevando 2 unidades surtidas de Granola Keto",
+            cantidadRequerida: 2,
+            categoria: "granolas",
+            productos: ["Granola Keto"],
+            precioPromo: 29000,
+            precioOriginal: 14800
+        }
     ]
 };
+
 
 let mostrandoTodasBarritas = false;
 let mostrandoTodosGranolas = false;
 let modalPaginaActual = 1;
+let mostrandoPromos = false;
 const productosPorPagina = 8;
 
 /*=================================
@@ -54,7 +125,7 @@ function guardarCarrito() {
 function cargarCarrito() {
     const carritoGuardado = localStorage.getItem('kivraCarrito');
     const totalGuardado = localStorage.getItem('kivraTotal');
-    
+
     if (carritoGuardado && totalGuardado) {
         carrito = JSON.parse(carritoGuardado);
         total = parseFloat(totalGuardado);
@@ -70,7 +141,7 @@ const carritoModule = {
             if (!nombre || !precio) {
                 throw new Error('Datos del producto incompletos');
             }
-            
+
             if (precio <= 0) {
                 throw new Error('El precio debe ser mayor a 0');
             }
@@ -86,7 +157,7 @@ const carritoModule = {
                 carrito.push({ nombre, precio, cantidad: 1 });
                 total += precio;
             }
-            
+
             guardarCarrito();
             mostrarMensaje('Producto agregado al carrito', 'exito');
         } catch (error) {
@@ -217,7 +288,7 @@ const carritoModule = {
                     </div>
                 </div>
             `).join('');
-        
+
         if (Object.keys(productos).length > 0) {
             html += `
                 <div class="mini-item vaciar-carrito">
@@ -227,7 +298,7 @@ const carritoModule = {
                 </div>
             `;
         }
-        
+
         return html;
     },
 
@@ -263,13 +334,21 @@ const productosModule = {
         const btnAnterior = document.getElementById("modal-anterior");
         const btnSiguiente = document.getElementById("modal-siguiente");
 
-        const totalPaginas = Math.ceil(productosArray.length / productosPorPagina);
-        const inicio = (modalPaginaActual - 1) * productosPorPagina;
-        const fin = inicio + productosPorPagina;
-        const productosAMostrar = productosArray.slice(inicio, fin);
+        // Ocultar elementos de paginación
+        modalPagina.style.display = 'none';
+        btnAnterior.style.display = 'none';
+        btnSiguiente.style.display = 'none';
 
-        modalListado.innerHTML = this.renderizarProductos(productosAMostrar);
-        this.actualizarControlesPaginacion(modalPagina, btnAnterior, btnSiguiente, totalPaginas, tipo);
+        // Mostrar todos los productos o promociones
+        if (tipo === 'promos') {
+            modalListado.innerHTML = this.renderizarPromos(productosArray);
+        } else {
+            modalListado.innerHTML = this.renderizarProductos(productosArray);
+        }
+
+        // Ajustar estilos del contenedor para scroll
+        modalListado.style.maxHeight = '70vh';
+        modalListado.style.overflowY = 'auto';
     },
 
     renderizarProductos(productos) {
@@ -277,9 +356,26 @@ const productosModule = {
             <div class="card" data-nombre="${prod.nombre}">
                 <img src="imagenes/${prod.imagen}" alt="${prod.nombre}" class="producto-img">
                 <strong>${prod.nombre}</strong>
-                <span>$${prod.precio}</span>
+                <span class="precio-modal">$${prod.precio}</span>
                 <small class="descripcion">${prod.descripcion}</small>
                 <button class="btnagregar" onclick="carritoModule.agregarAlCarrito('${prod.nombre}', ${prod.precio})">
+                    Agregar
+                </button>
+            </div>
+        `).join('');
+    },
+
+    renderizarPromos(promos) {
+        return promos.map(promo => `
+            <div class="card" data-nombre="${promo.titulo}">
+                <div class="promo-icon-large">🎁</div>
+                <strong>${promo.titulo}</strong>
+                <span class="precio-modal precio-promo-modal">$${promo.precioPromo}</span>
+                <small class="descripcion">${promo.descripcion}</small>
+                <div class="promo-productos">
+                    <small>Incluye: ${promo.productos.join(', ')}</small>
+                </div>
+                <button class="btnagregar" onclick="agregarPromoAlCarrito('${promo.titulo}', ${promo.precioPromo})">
                     Agregar
                 </button>
             </div>
@@ -302,59 +398,52 @@ const productosModule = {
     },
 
     filtrarProductos() {
-    const texto = document.getElementById("buscador").value.toLowerCase();
-    const containerGranola = document.getElementById("granolaContainer");
-    const containerBarritas = document.getElementById("barritasContainer");
-    const subtitulos = document.querySelectorAll(".productos-subtitulo");
-    const seccionesProductos = document.querySelectorAll(".productos-seccion");
-    
-    // Función auxiliar para verificar si un producto coincide con la búsqueda
-    const coincideConBusqueda = (producto) => {
-        return producto.nombre.toLowerCase().includes(texto) ||
-               producto.descripcion.toLowerCase().includes(texto);
-    };
-    
-    // Filtrar productos
-    const granolasCoincidentes = productos.granolas.filter(coincideConBusqueda);
-    const barritasCoincidentes = productos.barritas.filter(coincideConBusqueda);
-    const hayResultados = granolasCoincidentes.length > 0 || barritasCoincidentes.length > 0;
+        const texto = document.getElementById("buscador").value.toLowerCase();
+        const containerGranola = document.getElementById("granolaContainer");
+        const containerBarritas = document.getElementById("barritasContainer");
+        const containerPromos = document.getElementById("promosContainer");
+        const subtitulos = document.querySelectorAll(".productos-subtitulo");
+        const seccionesProductos = document.querySelectorAll(".productos-seccion");
 
-    // Mostrar u ocultar subtítulos y secciones
-    subtitulos.forEach(subtitulo => {
-        subtitulo.style.display = texto ? "none" : "block";
-    });
-    
-    seccionesProductos.forEach(seccion => {
-        seccion.style.display = texto ? "none" : "block";
-    });
+        // Función auxiliar para verificar si un producto coincide con la búsqueda
+        const coincideConBusqueda = (producto) => {
+            return producto.nombre.toLowerCase().includes(texto) ||
+                producto.descripcion.toLowerCase().includes(texto);
+        };
 
-    // Función para renderizar mensaje de no resultados
-    const mensajeNoResultados = `
+        // Función auxiliar para verificar si una promo coincide con la búsqueda
+        const coincideConBusquedaPromo = (promo) => {
+            return promo.titulo.toLowerCase().includes(texto) ||
+                promo.descripcion.toLowerCase().includes(texto) ||
+                promo.productos.some(p => p.toLowerCase().includes(texto));
+        };
+
+        // Filtrar productos y promos
+        const granolasCoincidentes = productos.granolas.filter(coincideConBusqueda);
+        const barritasCoincidentes = productos.barritas.filter(coincideConBusqueda);
+        const promosCoincidentes = productos.promos.filter(coincideConBusquedaPromo);
+        const hayResultados = granolasCoincidentes.length > 0 || barritasCoincidentes.length > 0 || promosCoincidentes.length > 0;
+
+        // Mostrar u ocultar subtítulos y secciones
+        subtitulos.forEach(subtitulo => {
+            subtitulo.style.display = texto ? "none" : "block";
+        });
+
+        seccionesProductos.forEach(seccion => {
+            seccion.style.display = texto ? "none" : "block";
+        });
+
+        // Función para renderizar mensaje de no resultados
+        const mensajeNoResultados = `
         <div class="no-resultados" style="text-align: center; padding: 20px; width: 100%;">
             <h3 style="color: var(--marron); font-size: 1.8rem;">No se encontraron productos que coincidan con "${texto}"</h3>
         </div>
     `;
 
-    // Actualizar contenido de los contenedores
-    if (containerGranola) {
-        containerGranola.innerHTML = granolasCoincidentes.length > 0 ? 
-            granolasCoincidentes.map(producto => `
-                <div class="producto">
-                    <img src="imagenes/${producto.imagen}" alt="${producto.nombre}">
-                    <h3>${producto.nombre}</h3>
-                    <p class="descripcion">${producto.descripcion}</p>
-                    <p class="precio">$${producto.precio}</p>
-                    <button class="btnagregar" onclick="carritoModule.agregarAlCarrito('${producto.nombre}', ${producto.precio})">
-                        Agregar al carrito
-                    </button>
-                </div>
-            `).join('') : 
-            (texto && !hayResultados ? mensajeNoResultados : '');
-    }
-
-    if (containerBarritas) {
-        containerBarritas.innerHTML = barritasCoincidentes.length > 0 ?
-            barritasCoincidentes.map(producto => `
+        // Actualizar contenido de los contenedores
+        if (containerGranola) {
+            containerGranola.innerHTML = granolasCoincidentes.length > 0 ?
+                granolasCoincidentes.map(producto => `
                 <div class="producto">
                     <img src="imagenes/${producto.imagen}" alt="${producto.nombre}">
                     <h3>${producto.nombre}</h3>
@@ -365,20 +454,55 @@ const productosModule = {
                     </button>
                 </div>
             `).join('') :
-            (texto && !hayResultados && !containerGranola.innerHTML ? mensajeNoResultados : '');
-    }
+                (texto && !hayResultados ? mensajeNoResultados : '');
+        }
 
-    // Actualizar visibilidad de los botones "Ver más"
-    const btnVerMasGranola = document.getElementById("verMasGranola");
-    const btnVerMasBarritas = document.getElementById("verMasBarritas");
+        if (containerBarritas) {
+            containerBarritas.innerHTML = barritasCoincidentes.length > 0 ?
+                barritasCoincidentes.map(producto => `
+                <div class="producto">
+                    <img src="imagenes/${producto.imagen}" alt="${producto.nombre}">
+                    <h3>${producto.nombre}</h3>
+                    <p class="descripcion">${producto.descripcion}</p>
+                    <p class="precio">$${producto.precio}</p>
+                    <button class="btnagregar" onclick="carritoModule.agregarAlCarrito('${producto.nombre}', ${producto.precio})">
+                        Agregar al carrito
+                    </button>
+                </div>
+            `).join('') :
+                (texto && !hayResultados && !containerGranola.innerHTML && !containerPromos.innerHTML ? mensajeNoResultados : '');
+        }
 
-    if (btnVerMasGranola) {
-        btnVerMasGranola.style.display = texto ? "none" : "block";
+        if (containerPromos) {
+            containerPromos.innerHTML = promosCoincidentes.length > 0 ?
+                promosCoincidentes.map(promo => `
+                <div class="producto">
+                    <div class="promo-icon">🎁</div>
+                    <h3>${promo.titulo}</h3>
+                    <p class="descripcion">${promo.descripcion}</p>
+                    <p class="precio">$${promo.precioPromo}</p>
+                    <button class="btnagregar" onclick="agregarPromoAlCarrito('${promo.titulo}', ${promo.precioPromo})">
+                        Agregar al carrito
+                    </button>
+                </div>
+            `).join('') : '';
+        }
+
+        // Actualizar visibilidad de los botones "Ver más"
+        const btnVerMasGranola = document.getElementById("verMasGranola");
+        const btnVerMasBarritas = document.getElementById("verMasBarritas");
+        const btnVerMasPromos = document.getElementById("verMasPromos");
+
+        if (btnVerMasGranola) {
+            btnVerMasGranola.style.display = texto ? "none" : "block";
+        }
+        if (btnVerMasBarritas) {
+            btnVerMasBarritas.style.display = texto ? "none" : "block";
+        }
+        if (btnVerMasPromos) {
+            btnVerMasPromos.style.display = texto ? "none" : "block";
+        }
     }
-    if (btnVerMasBarritas) {
-        btnVerMasBarritas.style.display = texto ? "none" : "block";
-    }
-}
 };
 
 /*=================================
@@ -411,6 +535,128 @@ function renderBarritas() {
     }
 }
 
+function renderPromos() {
+    const contenedor = document.getElementById('promosContainer');
+    const verMasBtn = document.getElementById('verMasPromos');
+
+    if (!contenedor) return;
+
+    const promosAMostrar = mostrandoPromos ? productos.promos : productos.promos.slice(0, 4);
+
+    contenedor.innerHTML = promosAMostrar.map(promo => `
+        <div class="producto">
+            <div class="promo-icon">🎁</div>
+            <h3>${promo.titulo}</h3>
+            <p class="descripcion">${promo.descripcion}</p>
+            <p class="precio">$${promo.precioPromo}</p>
+            <div class="promo-productos">
+                <small>Incluye: ${promo.productos.join(', ')}</small>
+            </div>
+            <button class="btnagregar" onclick="agregarPromoAlCarrito('${promo.titulo}', ${promo.precioPromo})">
+                Agregar al carrito
+            </button>
+        </div>
+    `).join('');
+
+    if (verMasBtn) {
+        verMasBtn.style.display = mostrandoPromos || productos.promos.length <= 4 ? 'none' : 'block';
+    }
+}
+
+// Sistema de selección de productos para promos
+let seleccionActual = {
+    promo: null,
+    productosSeleccionados: [],
+    cantidadRequerida: 0
+};
+
+function mostrarModalSeleccion(promo) {
+    const modal = document.getElementById('modal-seleccion');
+    const titulo = document.getElementById('modal-seleccion-titulo');
+    const descripcion = document.getElementById('modal-seleccion-descripcion');
+    const contenedor = document.getElementById('productos-seleccion');
+    const totalRequerido = document.getElementById('total-requerido');
+    
+    // Configurar el modal
+    seleccionActual.promo = promo;
+    seleccionActual.productosSeleccionados = [];
+    seleccionActual.cantidadRequerida = promo.cantidadRequerida;
+    
+    titulo.textContent = promo.titulo;
+    descripcion.textContent = promo.descripcion;
+    totalRequerido.textContent = seleccionActual.cantidadRequerida;
+    
+    // Renderizar opciones de productos con imágenes
+    contenedor.innerHTML = promo.productos.map(nombreProducto => {
+        // Buscar el producto completo en la categoría correspondiente
+        const productoCompleto = productos[promo.categoria].find(p => p.nombre === nombreProducto);
+        return `
+            <div class="producto-seleccion" data-producto="${nombreProducto}" onclick="toggleSeleccionProducto(this)">
+                ${productoCompleto ? `<img src="imagenes/${productoCompleto.imagen}" alt="${nombreProducto}">` : ''}
+                <h4>${nombreProducto}</h4>
+                ${productoCompleto ? `<p class="precio">$${productoCompleto.precio}</p>` : ''}
+            </div>
+        `;
+    }).join('');
+    
+    actualizarContadorSeleccion();
+    modal.classList.add('activo');
+}
+
+function toggleSeleccionProducto(elemento) {
+    const producto = elemento.dataset.producto;
+    const index = seleccionActual.productosSeleccionados.indexOf(producto);
+    
+    if (index === -1) {
+        // Agregar producto si no está seleccionado y no hemos alcanzado el límite
+        if (seleccionActual.productosSeleccionados.length < seleccionActual.cantidadRequerida) {
+            seleccionActual.productosSeleccionados.push(producto);
+            elemento.classList.add('seleccionado');
+        } else {
+            mostrarMensaje(`Solo puedes seleccionar ${seleccionActual.cantidadRequerida} productos`, 'error');
+        }
+    } else {
+        // Remover producto si ya está seleccionado
+        seleccionActual.productosSeleccionados.splice(index, 1);
+        elemento.classList.remove('seleccionado');
+    }
+    
+    actualizarContadorSeleccion();
+}
+
+function actualizarContadorSeleccion() {
+    const contador = document.getElementById('contador-seleccion');
+    const btnConfirmar = document.getElementById('confirmar-seleccion');
+    
+    contador.textContent = seleccionActual.productosSeleccionados.length;
+    btnConfirmar.disabled = seleccionActual.productosSeleccionados.length !== seleccionActual.cantidadRequerida;
+}
+
+function agregarPromoAlCarrito(titulo, precio) {
+    const promo = productos.promos.find(p => p.titulo === titulo);
+    if (promo) {
+        mostrarModalSeleccion(promo);
+    }
+}
+
+function confirmarSeleccionPromo() {
+    if (seleccionActual.productosSeleccionados.length === seleccionActual.cantidadRequerida) {
+        const tituloPersonalizado = `${seleccionActual.promo.titulo} (${seleccionActual.productosSeleccionados.join(', ')})`;
+        carritoModule.agregarAlCarrito(tituloPersonalizado, seleccionActual.promo.precioPromo);
+        document.getElementById('modal-seleccion').classList.remove('activo');
+        mostrarMensaje('Promoción agregada al carrito con éxito', 'exito');
+        
+        // Limpiar selección actual
+        seleccionActual = {
+            promo: null,
+            productosSeleccionados: [],
+            cantidadRequerida: 0
+        };
+    } else {
+        mostrarMensaje(`Debes seleccionar exactamente ${seleccionActual.cantidadRequerida} productos`, 'error');
+    }
+}
+
 function renderGranolas() {
     const contenedor = document.getElementById('granolaContainer');
     const verMasBtn = document.getElementById('verMasGranola');
@@ -436,25 +682,46 @@ function renderGranolas() {
     }
 }
 
-// Función para manejar el header al hacer scroll
+// Variables para el control del header
+let isHeaderSmall = false;
+let lastScrollY = 0;
+let scrollTimer = null;
+const SCROLL_THRESHOLD = 100;
+const SCROLL_DELAY = 150; // ms entre actualizaciones
+
+// Función throttled para el scroll
 function handleHeaderScroll() {
-    const header = document.querySelector('header');
-    const scrollY = window.scrollY;
-    
-    // Usar histéresis para evitar parpadeo
-    // Activar cuando pase de 120px, desactivar cuando baje de 80px
-    if (scrollY > 120) {
-        header.classList.add('header-small');
-    } else if (scrollY < 80) {
-        header.classList.remove('header-small');
+    if (scrollTimer !== null) {
+        return; // Si hay una actualización pendiente, salimos
     }
-    // Entre 80px y 120px no hacer nada (zona de histéresis)
+
+    const currentScroll = window.scrollY;
+    const header = document.querySelector('header');
+    
+    // Solo actualizamos si el cambio es significativo
+    if (Math.abs(currentScroll - lastScrollY) > 10) {
+        scrollTimer = setTimeout(() => {
+            const shouldBeSmall = currentScroll > SCROLL_THRESHOLD;
+            
+            if (shouldBeSmall !== isHeaderSmall) {
+                header.classList.toggle('header-small', shouldBeSmall);
+                isHeaderSmall = shouldBeSmall;
+            }
+            
+            lastScrollY = currentScroll;
+            scrollTimerd = null;
+        }, SCROLL_DELAY);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Inicializar promos (solo mostrar las primeras)
+    renderPromos();
+    // REMOVIDO: El event listener duplicado que causaba el problema
+
     // Añadir evento de scroll
     window.addEventListener('scroll', handleHeaderScroll);
-    
+
     // Cargar el carrito al inicio
     cargarCarrito();
 
@@ -484,12 +751,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleCartModal = document.getElementById('toggle-carrito-modal');
     const cartModalContent = document.getElementById('carrito-modal-contenido');
     const closeCartModal = document.querySelector('.cerrar-carrito-modal');
-    
+
     if (toggleCartModal && cartModalContent) {
         toggleCartModal.addEventListener('click', () => {
             cartModalContent.classList.toggle('activo');
             const isOpen = cartModalContent.classList.contains('activo');
-            document.getElementById('chevron-carrito-modal').style.transform = 
+            document.getElementById('chevron-carrito-modal').style.transform =
                 isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
         });
     }
@@ -557,6 +824,31 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('modal-titulo').textContent = 'Granolas Saludables';
         productosModule.mostrarPaginaModal('granolas');
         mostrarModal();
+    });
+
+    document.getElementById("verMasPromos")?.addEventListener('click', () => {
+        modalPaginaActual = 1;
+        document.getElementById('modal-titulo').textContent = 'Promociones Especiales';
+        productosModule.mostrarPaginaModal('promos');
+        mostrarModal();
+    });
+
+    // Event listeners para modal de selección
+    document.getElementById('cerrar-modal-seleccion')?.addEventListener('click', () => {
+        document.getElementById('modal-seleccion').classList.remove('activo');
+    });
+    
+    document.getElementById('cancelar-seleccion')?.addEventListener('click', () => {
+        document.getElementById('modal-seleccion').classList.remove('activo');
+    });
+    
+    document.getElementById('confirmar-seleccion')?.addEventListener('click', confirmarSeleccionPromo);
+    
+    // Cerrar modal al hacer clic fuera
+    document.getElementById('modal-seleccion')?.addEventListener('click', (e) => {
+        if (e.target.id === 'modal-seleccion') {
+            document.getElementById('modal-seleccion').classList.remove('activo');
+        }
     });
 
     // Renderizar productos iniciales

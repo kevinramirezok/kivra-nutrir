@@ -17,7 +17,16 @@
         padding: 16px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+          /* Modal responsive para móviles */
+    .modal-content {
+        padding: 10px;
+        width: 95%;
+        max-width: 100%;
+    }
+
+    #modal-listado .card {
+        width: 160px;
+    }tent: space-between;
         align-items: center;
         height: 100%;
         margin: 0;
@@ -47,6 +56,16 @@
 @media (max-width: 768px) {
     body {
         padding-bottom: 80px;
+    }
+
+    #modal-listado {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+
+    #modal-listado .card {
+        min-height: 280px;
     }
 
     /* Header responsive */
@@ -117,6 +136,12 @@
         font-size: 1.3rem;
         text-align: center;
         width: 100%;
+    }
+
+    .producto .promo-productos small {
+        font-size: 0.85rem;
+        text-align: center;
+        margin: 6px 0;
     }
 
     .producto .precio {
@@ -213,6 +238,7 @@
     .producto {
         max-width: 170px;
         padding: 14px;
+        min-height: 280px; /* Más altura para acomodar descripciones */
     }
 
     .producto img {
@@ -233,14 +259,16 @@
     }
 
     .producto .descripcion {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin: 6px 0;
-        /* Limitar a 2 líneas */
+        line-height: 1.3;
+        /* Permitir más líneas para ver ingredientes */
         display: -webkit-box;
-        -webkit-line-clamp: 2;
-        line-clamp: 2;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
+        text-align: center;
     }
 
     .producto .precio {
@@ -361,6 +389,46 @@
         padding: 10px 12px;
     }
 
+    #modal-listado {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #modal-listado .card {
+        min-height: 260px;
+    }
+
+    .modal-content {
+        padding: 10px;
+        width: 95%;
+        margin: 10px auto;
+    }
+    
+    /* Ajuste específico para el modal en móviles */
+    #modal-listado {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 8px;
+    }
+
+    #modal-listado .card {
+        min-height: 260px;
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    #modal-listado .card img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 8px;
+    }
+
+    .modal-content {
+        padding: 12px;
+        margin: 8px;
+    }
+
     header h1 {
         font-size: 2.4rem;
     }
@@ -397,6 +465,7 @@
     .producto {
         max-width: 150px;
         padding: 12px;
+        min-height: 260px; /* Altura adecuada para descripciones */
     }
 
     .producto img {
@@ -410,8 +479,16 @@
     }
 
     .producto .descripcion {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin: 4px 0;
+        line-height: 1.2;
+        /* Mostrar más información en móviles pequeños */
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-align: center;
     }
 
     .producto .precio {
@@ -447,6 +524,18 @@
     .modal-content {
         padding: 16px;
         width: 98vw;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #modal-listado {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #modal-listado .card {
+        min-height: 280px;
     }
 
     .cerrar-modal {
@@ -496,8 +585,56 @@
     }
 }
 
+/* Breakpoint específico para 425px */
+@media (max-width: 425px) {
+    #modal-listado {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 8px;
+    }
+
+    #modal-listado .card {
+        min-height: 240px;
+        padding: 8px;
+    }
+
+    #modal-listado .card img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .modal-content {
+        padding: 8px;
+        width: 98%;
+        margin: 8px auto;
+    }
+}
+
+/* Breakpoint específico para 425px */
+@media (max-width: 425px) {
+    #modal-listado {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    #modal-listado .card {
+        width: 150px;
+        min-height: 260px;
+        padding: 8px;
+    }
+}
+
 /* Móviles muy pequeños (iPhone SE, etc.) */
 @media (max-width: 375px) {
+    #modal-listado {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    #modal-listado .card {
+        max-width: 200px;
+        margin: 0 auto;
+    }
     .grid {
         grid-template-columns: 1fr 1fr;
         gap: 8px;
@@ -507,6 +644,7 @@
     .producto {
         max-width: 140px;
         padding: 10px;
+        min-height: 250px; /* Mantener espacio para ingredientes */
     }
 
     .producto img {
@@ -521,9 +659,16 @@
     }
 
     .producto .descripcion {
-        font-size: 1rem;
-        -webkit-line-clamp: 2;
-        line-clamp: 2;
+        font-size: 0.95rem;
+        line-height: 1.2;
+        /* Permitir ver ingredientes incluso en pantallas muy pequeñas */
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin: 4px 0;
+        text-align: center;
     }
 
     .producto .precio {
