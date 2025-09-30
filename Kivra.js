@@ -3,32 +3,32 @@
 ==================================*/
 const productos = {
     barritas: [
-        { nombre: "Barrita Proteica", precio: 1150, descripcion: "Barra de cereal, trigo, girasol, chía, chocolate y aceite de maní", imagen: "barrita (1).jpg" },
-        { nombre: "Barrita Dulce de Leche", precio: 1150, descripcion: "Barra de cereal, dulce de leche, maní, nueces", imagen: "barrita (2).jpg" },
-        { nombre: "Barrita Trigo Sarraceno", precio: 1150, descripcion: "Barra de cereal, trigo sarraceno, algarroba, arándanos, quinoa y chía", imagen: "barrita (3).jpg" },
-        { nombre: "Barrita Energética", precio: 1150, descripcion: "Barra de cereal, miel, quinoa, almendras y miel", imagen: "barrita (4).jpg" },
-        { nombre: "Barrita Natural", precio: 1000, descripcion: "Granola, pasta de maíz, maní, pasas de uva y sésamo integral", imagen: "barrita (5).jpg" },
-        { nombre: "Barrita Granola", precio: 1000, descripcion: "Cereal, girasol, pasas de uva y miel", imagen: "barrita (6).jpg" },
-        { nombre: "Barrita de Sésamo", precio: 1000, descripcion: "Sésamo, coco y miel", imagen: "barrita (7).jpg" },
-        { nombre: "Barrita Keto", precio: 1500, descripcion: "Barra de cereal, nueces, maní, pasta de maní, almendras, girasol, chocolate 80%, girasol, chía, sésamo", imagen: "granola (11).jpg" },
-        { nombre: "Barrita de Maní", precio: 1000, descripcion: "Maní, pasas de uva y miel", imagen: "barrita (8).jpg" },
-        { nombre: "Turrón Energético de Chía", precio: 1600, descripcion: "Sésamo, almendras tostadas, girasol, chía y miel", imagen: "turron (1).jpg" },
-        { nombre: "Turrón Energético", precio: 1600, descripcion: "Girasol tostada, semillas de lino, quinoa y fructosa", imagen: "turron (2).jpg" },
-        { nombre: "Turrón Puro Calcio", precio: 1600, descripcion: "Sésamo blanco, sésamo negro, nueces y miel", imagen: "turron (3).jpg" },
-        { nombre: "Turrón Pura Fibra", precio: 1600, descripcion: "Avena, maní tostado, semillas de maíz sin azúcar, chía y fructosa", imagen: "turron (4).jpg" },
-        { nombre: "Turrón Crocante de Maní", precio: 1600, descripcion: "Maní seleccionado y fructosa", imagen: "turron (5).jpg" }
+        { nombre: "Barrita Proteica", precio: 1150, descripcion: "Barra de cereal, trigo, girasol, chía, chocolate y aceite de maní", imagen: "BARRITA PROTEICA.jpg" },
+        { nombre: "Barrita Dulce de Leche", precio: 1150, descripcion: "Barra de cereal, dulce de leche, maní, nueces", imagen: "BARRITA DULCE DE LECHE.jpg" },
+        { nombre: "Barrita Trigo Sarraceno", precio: 1150, descripcion: "Barra de cereal, trigo sarraceno, algarroba, arándanos, quinoa y chía", imagen: "BARRITA TRIGO CERRACENO.jpg" },
+        { nombre: "Barrita Energética", precio: 1150, descripcion: "Barra de cereal, miel, quinoa, almendras y miel", imagen: "BARRITA ENERGÉTICA.jpg" },
+        { nombre: "Barrita Natural", precio: 1000, descripcion: "Granola, pasta de maíz, maní, pasas de uva y sésamo integral", imagen: "BARRITA NATURAL.jpg" },
+        { nombre: "Barrita Granola", precio: 1000, descripcion: "Cereal, girasol, pasas de uva y miel", imagen: "BARRITA GRANOLA.jpg" },
+        { nombre: "Barrita de Sésamo", precio: 1000, descripcion: "Sésamo, coco y miel", imagen: "BARRITA DE SESAMO.jpg" },
+        { nombre: "Barrita de Maní", precio: 1000, descripcion: "Maní, pasas de uva y miel", imagen: "BARRITA BOCADITO DE MANI.jpg" },
+        { nombre: "Barrita Keto", precio: 2500, descripcion: "Barritas de cereal, nueces, maní, pasta de maní, almendras, arándanos, chocolate 80%, girasol, chía, sésamo", imagen: "BARRITA KETO.jpg" },
+        { nombre: "Turrón Energético de Chía", precio: 1600, descripcion: "Sésamo, almendras tostadas, girasol, chía y miel", imagen: "TURRON ENERGETICO DE CHIA.jpg" },
+        { nombre: "Turrón Energético", precio: 1600, descripcion: "Girasol tostada, semillas de lino, quinoa y fructosa", imagen: "TURRON ENERGETICO.jpg" },
+        { nombre: "Turrón Puro Calcio", precio: 1600, descripcion: "Sésamo blanco, sésamo negro, nueces y miel", imagen: "TURRON PURO CALCIO.jpg" },
+        { nombre: "Turrón Pura Fibra", precio: 1600, descripcion: "Avena, maní tostado, semillas de maíz sin azúcar, chía y fructosa", imagen: "TURRON PUTA FIBRA.jpg" },
+        { nombre: "Turrón Crocante de Maní", precio: 1600, descripcion: "Maní seleccionado y fructosa", imagen: "TURRON CROCANTE DE MANI.jpg" }
     ],
     granolas: [
-        { nombre: "Granola Premium", precio: 5800, descripcion: "Avena tostada, semillas de chía, almendras, castañas caju, duraznos, peras, pasas de uva y miel de abejas", imagen: "granola (1).jpg" },
-        { nombre: "Granola Madre Tierra", precio: 5900, descripcion: "Avena, harina de algarroba, arándanos pasa, quinoa pop, sal, aceite de girasol, trigo Sarraceno, coco en escamas, saborizante de vainilla, fructosa", imagen: "granola (2).jpg" },
-        { nombre: "Granola Fuerza Natural", precio: 5900, descripcion: "Avena, maní, maní triturado, quinoa pop, copos maíz sin azúcar, almendras, aceite de girasol, sal, saborizante (vainilla), fructosa", imagen: "granola (3).jpg" },
-        { nombre: "Granola Crocante", precio: 5900, descripcion: "Avena tostada, copos de maíz sin azúcar, semillas de lino, semillas de girasol pelado, semillas de chía, sésamo integral y fructosa", imagen: "granola (4).jpg" },
-        { nombre: "Granola Especial con Frutas", precio: 5600, descripcion: "Avena tostada, duraznos, peras, almendras, pasas de uva y miel de abejas", imagen: "granola (5).jpg" },
-        { nombre: "Granola Natural", precio: 5900, descripcion: "Avena tostada, copos de maíz sin azúcar, almendras, sésamo integral, pasas de uva y fructosa", imagen: "granola (6).jpg" },
-        { nombre: "Granola Energética", precio: 5900, descripcion: "Avena tostada, copos de maíz sin azúcar, almendras, maní pelado, girasol pelado y fructosa", imagen: "granola (7).jpg" },
-        { nombre: "Granola Crocante con Manzanas", precio: 5900, descripcion: "Avena tostada, copos de maíz sin azúcar, nueces, pasas de uva, manzana y fructosa", imagen: "granola (8).jpg" },
-        { nombre: "Granola Tropical", precio: 5900, descripcion: "Avena tostada, pasas de uva, copos de maíz sin azúcar, banana, almendras y fructosa", imagen: "granola (9).jpg" },
-        { nombre: "Granola Keto", precio: 14800, descripcion: "Granola especial, maní, pasta de maní, almendras, girasol, chocolate 80%, girasol, chía, sésamo", imagen: "granola (10).jpg" },
+        { nombre: "Granola Premium", precio: 9900, descripcion: "Avena tostada, semillas de chía, almendras, castañas caju, duraznos, peras, pasas de uva y miel de abejas", imagen: "GRANOLA PREMIUM.jpg" },
+        { nombre: "Granola Madre Tierra", precio: 9900, descripcion: "Avena, harina de algarroba, arándanos pasa, quinoa pop, sal, aceite de girasol, trigo Sarraceno, coco en escamas, saborizante de vainilla, fructosa", imagen: "GRANOLA  MADRE TIERRA.jpg" },
+        { nombre: "Granola Fuerza Natural", precio: 9900, descripcion: "Avena, maní, maní triturado, quinoa pop, copos maíz sin azúcar, almendras, aceite de girasol, sal, saborizante (vainilla), fructosa", imagen: "GRANOLA FUERZA NATURAL.jpg" },
+        { nombre: "Granola Crocante", precio: 9500, descripcion: "Avena tostada, copos de maíz sin azúcar, semillas de lino, semillas de girasol pelado, semillas de chía, sésamo integral y fructosa", imagen: "GRANOLA CROCANTE.jpg" },
+        { nombre: "Granola Especial con Frutas", precio: 9500, descripcion: "Avena tostada, duraznos, peras, almendras, pasas de uva y miel de abejas", imagen: "GRANOLA ESPECIAL CON FRUTAS.jpg" },
+        { nombre: "Granola Natural", precio: 9500, descripcion: "Avena tostada, copos de maíz sin azúcar, almendras, sésamo integral, pasas de uva y fructosa", imagen: "GRANOLA NATURAL.jpg" },
+        { nombre: "Granola Energética", precio: 9500, descripcion: "Avena tostada, copos de maíz sin azúcar, almendras, maní pelado, girasol pelado y fructosa", imagen: "GRANOLA ENERGÉTICA.jpg" },
+        { nombre: "Granola Crocante con Manzanas", precio: 9500, descripcion: "Avena tostada, copos de maíz sin azúcar, nueces, pasas de uva, manzana y fructosa", imagen: "GRANOLA  CROCANTE CON MANZANAS.jpg" },
+        { nombre: "Granola Tropical", precio: 9500, descripcion: "Avena tostada, pasas de uva, copos de maíz sin azúcar, banana, almendras y fructosa", imagen: "GRANOLA TROPICAL.jpg" },
+        { nombre: "Granola Keto", precio: 16800, descripcion: "Granola especial, maní, pasta de maní, almendras, girasol, chocolate 80%, girasol, chía, sésamo", imagen: "GRANOLA KETO.jpg" },
         /*{ nombre: "Aceite de Coco 150ml", precio: 3500, descripcion: "Aceite de coco prensado en frío, 100% natural, libre de gluten", imagen: "aceite (1).jpg" },
         { nombre: "Aceite de Coco 250ml", precio: 5500, descripcion: "Aceite de coco prensado en frío, 100% natural, libre de gluten", imagen: "aceite (2).jpg" },
         { nombre: "Aceite de Coco 500ml", precio: 9500, descripcion: "Aceite de coco prensado en frío, 100% natural, libre de gluten", imagen: "aceite (3).jpg" },
@@ -74,8 +74,8 @@ const productos = {
         },
         {
             titulo: "Promo Turrones",
-            descripcion: "Llevando 4 unidades surtidas",
-            cantidadRequerida: 4,
+            descripcion: "Llevando 5 unidades surtidas",
+            cantidadRequerida: 5,
             categoria: "barritas",
             productos: ["Turrón Energético de Chía", "Turrón Energético", "Turrón Puro Calcio", "Turrón Pura Fibra", "Turrón Crocante de Maní"],
             precioPromo: 7000,
@@ -83,12 +83,21 @@ const productos = {
         },
         {
             titulo: "Promo Keto",
-            descripcion: "Llevando 2 unidades surtidas de Granola Keto",
+            descripcion: "Llevando 2 unidades de Granola Keto",
             cantidadRequerida: 2,
             categoria: "granolas",
             productos: ["Granola Keto"],
-            precioPromo: 29000,
-            precioOriginal: 14800
+            precioPromo: 29900,
+            precioOriginal: 16800
+        },
+        {
+            titulo: "Promo Barritas Keto",
+            descripcion: "Llevando 4 unidades de Barrita Keto",
+            cantidadRequerida: 4,
+            categoria: "barritas",
+            productos: ["Barrita Keto"],
+            precioPromo: 8500,
+            precioOriginal: 2500
         }
     ]
 };
@@ -368,7 +377,7 @@ const productosModule = {
     renderizarPromos(promos) {
         return promos.map(promo => `
             <div class="card" data-nombre="${promo.titulo}">
-                <div class="promo-icon-large">🎁</div>
+                <div class="promo-icon-large">⚡</div>
                 <strong>${promo.titulo}</strong>
                 <span class="precio-modal precio-promo-modal">$${promo.precioPromo}</span>
                 <small class="descripcion">${promo.descripcion}</small>
@@ -477,7 +486,7 @@ const productosModule = {
             containerPromos.innerHTML = promosCoincidentes.length > 0 ?
                 promosCoincidentes.map(promo => `
                 <div class="producto">
-                    <div class="promo-icon">🎁</div>
+                    <div class="promo-icon">⚡</div>
                     <h3>${promo.titulo}</h3>
                     <p class="descripcion">${promo.descripcion}</p>
                     <p class="precio">$${promo.precioPromo}</p>
@@ -545,9 +554,9 @@ function renderPromos() {
 
     contenedor.innerHTML = promosAMostrar.map(promo => `
         <div class="producto">
-            <div class="promo-icon">🎁</div>
+            <div class="promo-icon">⚡</div>
             <h3>${promo.titulo}</h3>
-            <p class="descripcion">${promo.descripcion}</p>
+            <p class="descripcion">${promo.descripcion}</p>  
             <p class="precio">$${promo.precioPromo}</p>
             <div class="promo-productos">
                 <small>Incluye: ${promo.productos.join(', ')}</small>
@@ -635,7 +644,15 @@ function actualizarContadorSeleccion() {
 function agregarPromoAlCarrito(titulo, precio) {
     const promo = productos.promos.find(p => p.titulo === titulo);
     if (promo) {
-        mostrarModalSeleccion(promo);
+        // Promociones Keto se agregan automáticamente (un solo producto)
+        if (promo.titulo === "Promo Keto" || promo.titulo === "Promo Barritas Keto") {
+            const tituloPersonalizado = `${promo.titulo} (${promo.productos.join(', ')})`;
+            carritoModule.agregarAlCarrito(tituloPersonalizado, promo.precioPromo);
+            mostrarMensaje('Promoción agregada al carrito con éxito', 'exito');
+        } else {
+            // Otras promociones requieren selección
+            mostrarModalSeleccion(promo);
+        }
     }
 }
 
@@ -709,7 +726,7 @@ function handleHeaderScroll() {
             }
             
             lastScrollY = currentScroll;
-            scrollTimerd = null;
+            scrollTimer = null;
         }, SCROLL_DELAY);
     }
 }
